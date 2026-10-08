@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nocturne | High-End Keyboards & Mice</title>
+  <meta name="description" content="A boutique tech store selling high-end mechanical keyboards and precision mice. Pure black-and-white monochrome theme with Poppins typography." />
+  
+  <!-- Google Fonts: Poppins (Primary) & JetBrains Mono (Specs) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Standalone Pure Vanilla CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- =========================================================================
+       FLOATING PILL NAVBAR
+       - Floating dark capsule container
+       - Left: Circular white logo container (38px x 38px, border-radius: 50%)
+       - Center: Navigation links ("Keyboards", "Mice", "About", "Support", "FAQ", "Policies")
+       - Right: "Log In" button + White pill-shaped button ("Cart (0)")
+       ========================================================================= -->
+  <header class="navbar-wrapper">
+    <nav class="pill-navbar" aria-label="Main Navigation">
+      
+      <!-- Left: Circular White Logo Container with Planet Ring SVG -->
+      <a href="#" class="navbar-logo-circle" aria-label="Nocturne Peripherals Home">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <ellipse cx="12" cy="12" rx="9.5" ry="3.8" transform="rotate(-28 12 12)" stroke="currentColor" stroke-width="1.6" />
+          <circle cx="12" cy="12" r="4.8" fill="currentColor" stroke="none" />
+        </svg>
+      </a>
+
+      <!-- Center: Navigation Links -->
+      <ul class="navbar-links">
+        <li><a href="#keyboards" class="navbar-link">Keyboards</a></li>
+        <li><a href="#mice" class="navbar-link">Mice</a></li>
+        <li><a href="#about" class="navbar-link">About Us</a></li>
+        <li><a href="#support" class="navbar-link">Support</a></li>
+        <li><a href="#faq" class="navbar-link">FAQ</a></li>
+        <li><a href="#policies" class="navbar-link">Policies</a></li>
+      </ul>
+
+      <!-- Right: Log In & Cart Action Buttons -->
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <button type="button" class="navbar-auth-btn" style="color: #fff; font-size: 0.825rem; font-weight: 500; padding: 0.45rem 0.85rem; border-radius: 9999px;">
+          Log In
+        </button>
+        <button type="button" class="navbar-action-pill" aria-label="View Shopping Cart">
+          <span>Cart (0)</span>
+        </button>
+      </div>
+
+    </nav>
+  </header>
+
+  <main>
+    <!-- =========================================================================
+         HERO SECTION: High-Contrast Luxury Tech Introduction (Monochrome)
+         ========================================================================= -->
+    <section class="hero-section container">
+      <div class="hero-grid">
+        
+        <div class="hero-content">
+          <div class="hero-tag">
+            <span class="hero-tag-dot"></span>
+            <span>MONOCHROME ATELIER · 8000Hz POLLING</span>
+          </div>
+
+          <h1 class="hero-headline">
+            Sculpted for the Tactile Purist.
+          </h1>
+
+          <p class="hero-subtext">
+            Custom mechanical keyboards spanning compact 60%, tournament TKL, ergonomic Alice split, and monumental 100% full-size boards. Paired with lightweight magnesium and posture-sculpted mice.
+          </p>
+
+          <div class="hero-btn-group">
+            <a href="#keyboards" class="btn-primary">
+              <span>Shop Collection</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2.5" fill="none">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#mice" class="btn-secondary">Explore Precision Mice</a>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <img src="/src/assets/images/hero_peripherals_minimal_1791439039302.jpg" alt="Nocturne Custom Keyboard and Magnesium Mouse on Slate" class="hero-image" />
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         PRODUCT GRID 1: MECHANICAL KEYBOARDS (4 Distinct Layout Architectures)
+         ========================================================================= -->
+    <section id="keyboards" class="section container">
+      <header class="section-header">
+        <p class="section-kicker">Milled Chassis · Gasket Acoustics</p>
+        <h2 class="section-title">Mechanical Keyboards</h2>
+        <p class="section-description">
+          A diverse spectrum of layout architectures engineered for purists—from minimalist 60% desk savers to tournament TKLs, ergonomic Alice split wings, and heavy full-size aluminum monoliths.
+        </p>
+      </header>
+
+      <div class="product-grid">
+        
+        <!-- Keyboard 1: 60% Compact -->
+        <article class="product-card" style="animation-delay: 0ms;">
+          <div class="product-card-media">
+            <img src="/src/assets/images/kb_compact_60_1791443009261.jpg" alt="Nocturne 60% Minimalist Compact" />
+            <span class="product-card-tag">60% Compact</span>
+          </div>
+          <div class="product-card-body">
+            <span class="product-category-label">60% Ultra-Compact Form Factor</span>
+            <h3 class="product-title">Nocturne 60% Minimalist Compact</h3>
+            <p class="product-specs">60-Key Layout · Milled 6063 Aluminum · Hotswap PCB</p>
+            <div class="product-card-footer">
+              <span class="product-price">$285</span>
+              <button class="btn-add-cart">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Keyboard 2: TKL Tenkeyless -->
+        <article class="product-card" style="animation-delay: 110ms;">
+          <div class="product-card-media">
+            <img src="/src/assets/images/kb_tkl_tenkeyless_1791443027290.jpg" alt="Apex Tenkeyless (TKL) Edition" />
+            <span class="product-card-tag">TKL Layout</span>
+          </div>
+          <div class="product-card-body">
+            <span class="product-category-label">80% Tenkeyless Tournament Layout</span>
+            <h3 class="product-title">Apex Tenkeyless (TKL) Edition</h3>
+            <p class="product-specs">Dedicated F-Row · Arrow Cluster · 8000Hz Polling</p>
+            <div class="product-card-footer">
+              <span class="product-price">$360</span>
+              <button class="btn-add-cart">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Keyboard 3: Alice Split Ergonomic -->
+        <article class="product-card" style="animation-delay: 220ms;">
+          <div class="product-card-media">
+            <img src="/src/assets/images/kb_alice_ergonomic_1791443045145.jpg" alt="Aether Alice Ergonomic Split" />
+            <span class="product-card-tag">Alice Split Ergo</span>
+          </div>
+          <div class="product-card-body">
+            <span class="product-category-label">Ergonomic Angled Split Wings</span>
+            <h3 class="product-title">Aether Alice Ergonomic Split</h3>
+            <p class="product-specs">Split Angled Matrix · Dual Spacebars · Wrist Pitch</p>
+            <div class="product-card-footer">
+              <span class="product-price">$410</span>
+              <button class="btn-add-cart">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Keyboard 4: Full-Size 100% Heavy -->
+        <article class="product-card" style="animation-delay: 330ms;">
+          <div class="product-card-media">
+            <img src="/src/assets/images/kb_fullsize_heavy_1791443057709.jpg" alt="Titan Monolith 100% Full-Size" />
+            <span class="product-card-tag">Full-Size 100%</span>
+          </div>
+          <div class="product-card-body">
+            <span class="product-category-label">100% Heavy Machined Workstation</span>
+            <h3 class="product-title">Titan Monolith 100% Full-Size</h3>
+            <p class="product-specs">104-Key Numpad · 4.2kg Solid Billet · Knurled Dial</p>
+            <div class="product-card-footer">
+              <span class="product-price">$465</span>
+              <button class="btn-add-cart">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         PRODUCT GRID 2: PRECISION MICE (4 Distinct Functional Types)
+         ========================================================================= -->
+    <section id="mice" class="section container">
+      <header class="section-header">
+        <p class="section-kicker">Structural Alloys · Sub-Millimeter Optical</p>
+        <h2 class="section-title">Precision Mice</h2>
+        <p class="section-description">
+          Engineered for distinct functional use cases: esports featherweight honeycomb skeletons, multi-wheel CAD productivity shapes, pocketable travel low-profiles, and orthotic vertical handshake form factors.
+        </p>
+      </header>
+
+      <div class="product-grid">
+        
+        <!-- Mouse 1: Honeycomb Ultralight -->
+        <article class="product-card" style="animation-delay: 0ms;">
+          <div class="product-card-media">
+            <img src="/src/assets/images/mouse_honeycomb_light_1791443074177.jpg" alt="Aerox Honeycomb Ultralight" />
+            <span class="product-card-tag">Honeycomb Gaming</span>
+          </div>
+          <div class="product-card-body">
+            <span class="product-category-label">Perforated Esports Skeleton</span>
+            <h3 class="product-title">Aerox Honeycomb Ultralight</h3>
+            <p class="product-specs">34 Grams · Hexagonal Lattice · PAW3950 Optical</p>
+            <div class="product-card-footer">
+              <span class="product-price">$155</span>
+              <button class="btn-add-cart">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Mouse 2: Ergonomic Productivity -->
+        <article class="product-card" style="animation-delay: 110ms;">
+          <div class="product-card-media">
+            <img src="/src/assets/images/mouse_ergo_productivity_1791443089746.jpg" alt="Master Sculpt Ergonomic Pro" />
+            <span class="product-card-tag">Ergonomic Productivity</span>
+          </div>
+          <div class="product-card-body">
+            <span class="product-category-label">Right-Hand Sculpted Thumb Rest</span>
+            <h3 class="product-title">Master Sculpt Ergonomic Pro</h3>
+            <p class="product-specs">Thumb Shelf · Dual Machined Wheels · MagSpeed</p>
+            <div class="product-card-footer">
+              <span class="product-price">$195</span>
+              <button class="btn-add-cart">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Mouse 3: Minimalist Travel -->
+        <article class="product-card" style="animation-delay: 220ms;">
+          <div class="product-card-media">
+            <img src="/src/assets/images/mouse_travel_minimal_1791443103830.jpg" alt="Pebble Slim Travel Ultralight" />
+            <span class="product-card-tag">Minimalist Travel</span>
+          </div>
+          <div class="product-card-body">
+            <span class="product-category-label">Ultra-Low Profile Pocket Mouse</span>
+            <h3 class="product-title">Pebble Slim Travel Ultralight</h3>
+            <p class="product-specs">18mm Ultra-Thin · Silent Optical · Bluetooth 5.3</p>
+            <div class="product-card-footer">
+              <span class="product-price">$125</span>
+              <button class="btn-add-cart">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Mouse 4: Vertical Handshake -->
+        <article class="product-card" style="animation-delay: 330ms;">
+          <div class="product-card-media">
+            <img src="/src/assets/images/mouse_vertical_ergo_1791443119904.jpg" alt="Orthos Vertical 57° Posture" />
+            <span class="product-card-tag">Vertical Posture</span>
+          </div>
+          <div class="product-card-body">
+            <span class="product-category-label">Natural Handshake Ergonomic Mouse</span>
+            <h3 class="product-title">Orthos Vertical 57° Posture</h3>
+            <p class="product-specs">57-Degree Natural Angle · Strain Relief · OLED DPI</p>
+            <div class="product-card-footer">
+              <span class="product-price">$175</span>
+              <button class="btn-add-cart">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         ABOUT US / OUR MISSION SECTION
+         ========================================================================= -->
+    <section id="about" class="section container">
+      <div style="background-color: var(--color-surface); border: 1px solid var(--color-border); border-radius: 24px; padding: 3.5rem;">
+        <p class="section-kicker">Atelier Philosophy</p>
+        <h2 class="section-title">Our Mission: Banishing Hollow Plastics</h2>
+        <p class="section-description" style="max-width: 800px; margin-bottom: 2rem;">
+          Nocturne was founded with a singular conviction: the tools you touch for thousands of hours each year should possess the permanence, acoustic dignity, and precision of a Swiss mechanical movement. We mill solid 6063 aerospace aluminum, suspend PCB assemblies with isolated silicone gasket dampers, and hand-balance stainless stabilizer wires.
+        </p>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SUPPORT SECTION
+         ========================================================================= -->
+    <section id="support" class="section container">
+      <div class="section-header">
+        <p class="section-kicker">Atelier Concierge</p>
+        <h2 class="section-title">Customer Care & Support</h2>
+        <p class="section-description">
+          Direct communication with our assembly workshop engineers. We respond to all tickets within 2 business hours.
+        </p>
+      </div>
+      <div style="background-color: var(--color-surface); border: 1px solid var(--color-border); border-radius: 20px; padding: 2.5rem; max-width: 700px;">
+        <p style="color: #fff; margin-bottom: 0.5rem; font-weight: 600;">Direct Concierge Email</p>
+        <a href="mailto:atelier@nocturne.io" style="color: #d4d4d8; text-decoration: underline;">atelier@nocturne.io →</a>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         FAQ SECTION
+         ========================================================================= -->
+    <section id="faq" class="section container">
+      <div class="section-header">
+        <p class="section-kicker">Knowledge Base</p>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 1rem; max-width: 860px;">
+        <div style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 12px; padding: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 600; color: #fff; margin-bottom: 0.5rem;">Are Nocturne mechanical keyboards hot-swappable?</h3>
+          <p style="font-size: 0.875rem; color: #d4d4d8;">Yes. Every board features Kailh hot-swap sockets rated for over 100 switch swaps with zero soldering required.</p>
+        </div>
+        <div style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 12px; padding: 1.5rem;">
+          <h3 style="font-size: 1rem; font-weight: 600; color: #fff; margin-bottom: 0.5rem;">How does 8000Hz polling rate work?</h3>
+          <p style="font-size: 0.875rem; color: #d4d4d8;">High-speed 32-bit ARM microcontrollers transmit reports at 0.125ms intervals directly via USB-C or 4K wireless dongles.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SHIPPING & RETURN POLICY SECTION
+         ========================================================================= -->
+    <section id="policies" class="section container">
+      <div class="section-header">
+        <p class="section-kicker">Guarantees & Logistics</p>
+        <h2 class="section-title">Shipping & Return Policy</h2>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+        <div style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 16px; padding: 2rem;">
+          <h3 style="font-size: 1.1rem; font-weight: 700; color: #fff; margin-bottom: 0.5rem;">Global Express Shipping</h3>
+          <p style="font-size: 0.85rem; color: #d4d4d8;">Insured worldwide delivery via DHL Express in high-density anti-static foam packaging.</p>
+        </div>
+        <div style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 16px; padding: 2rem;">
+          <h3 style="font-size: 1.1rem; font-weight: 700; color: #fff; margin-bottom: 0.5rem;">30-Day Tactile Audition</h3>
+          <p style="font-size: 0.85rem; color: #d4d4d8;">Audition our peripherals for 30 calendar days. If not satisfied, return for a 100% refund with prepaid labels.</p>
+        </div>
+        <div style="background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 16px; padding: 2rem;">
+          <h3 style="font-size: 1.1rem; font-weight: 700; color: #fff; margin-bottom: 0.5rem;">2-Year Atelier Warranty</h3>
+          <p style="font-size: 0.85rem; color: #d4d4d8;">Comprehensive warranty covering chassis tolerances, PCB controllers, and optical sensors.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer style="border-top: 1px solid var(--color-border); padding: 4rem 0 2rem; background-color: #060608;">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; color: var(--color-text-subtle); font-size: 0.85rem;">
+      <p>© 2026 Nocturne Peripherals Atelier. All rights reserved.</p>
+      <p>Pure Semantic HTML5, Vanilla CSS & Poppins Typography.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

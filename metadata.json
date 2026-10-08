@@ -1,0 +1,6 @@
+{
+  "name": "Nocturne | Boutique Peripherals",
+  "description": "A luxury boutique crafting bespoke mechanical keyboards and precision mice with floating pill navigation, responsive CSS grid catalogs, and artisanal tactile engineering.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
